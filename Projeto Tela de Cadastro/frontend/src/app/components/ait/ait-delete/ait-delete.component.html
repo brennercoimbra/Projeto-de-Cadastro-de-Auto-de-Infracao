@@ -1,0 +1,52 @@
+<mat-card>
+    <mat-card-title class="head-form">Exlusão de AIT</mat-card-title>
+    <form action="">
+        <div>
+            <mat-form-field>
+                <mat-label>Série</mat-label>
+                <input matInput maxlength="2" placeholder="XX" [value]="ait.serie" name="serie" disabled>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <mat-label>Número</mat-label>
+                <input matInput maxlength="8" placeholder="########" [value]="ait.numero" name="numero" disabled>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <mat-label>Placa</mat-label>
+                <input matInput minlength="7" maxlength="7" [value]="ait.placa" name="placa" disabled>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <mat-label>Marca</mat-label>
+                <input matInput [value]="ait.marca" name="marca" disabled>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <mat-label>Tipo do Veículo</mat-label>
+                <input matInput [value]="ait.tipo_veiculo" name="tipo_veiculo" disabled>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <mat-label>Cor</mat-label>
+                <input matInput [value]="ait.cor_veiculo" name="cor_veiculo" disabled>
+            </mat-form-field>
+        </div>
+    </form>
+
+    <div>
+        <button mat-raised-button (click)="deleteAit()" color="warn">
+            Excluir
+        </button>
+
+        <button mat-raised-button (click)="cancel()">
+            Cancelar
+        </button>
+    </div>
+
+</mat-card>

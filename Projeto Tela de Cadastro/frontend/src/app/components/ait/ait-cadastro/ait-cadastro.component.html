@@ -1,0 +1,52 @@
+<mat-card>
+    <mat-card-title class="head-form">Cadastro AIT</mat-card-title>
+    <form action="">
+        <div>
+            <mat-form-field>
+                <mat-label>Série</mat-label>
+                <input matInput maxlength="2" placeholder="XX" [(ngModel)]="ait.serie" name="serie">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <mat-label>Número</mat-label>
+                <input matInput maxlength="8" placeholder="########" [(ngModel)]="ait.numero" name="numero">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <mat-label>Placa</mat-label>
+                <input matInput minlength="7" maxlength="7" [(ngModel)]="ait.placa" name="placa">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <mat-label>Marca</mat-label>
+                <input matInput [(ngModel)]="ait.marca" name="marca">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <mat-label>Tipo do Veículo</mat-label>
+                <input matInput [(ngModel)]="ait.tipo_veiculo" name="tipo_veiculo">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <mat-label>Cor</mat-label>
+                <input matInput [(ngModel)]="ait.cor_veiculo" name="cor_veiculo">
+            </mat-form-field>
+        </div>
+    </form>
+
+    <div>
+        <button mat-raised-button (click)="createAit()" color="primary">
+            Salvar
+        </button>
+
+        <button mat-raised-button (click)="cancel()" color=warn>
+            Cancelar
+        </button>
+    </div>
+
+</mat-card>

@@ -1,0 +1,58 @@
+{
+  "aits": [
+    {
+      "serie": "AG",
+      "numero": "12345678",
+      "placa": "HFD1234",
+      "marca": "CORSA",
+      "tipo_veiculo": "AUTOMOVEL",
+      "cor_veiculo": "PRETA",
+      "id": 1
+    },
+    {
+      "serie": "E3",
+      "numero": "32145646",
+      "placa": "GVC2016",
+      "marca": "FIAT",
+      "tipo_veiculo": "AUTOMOVEL",
+      "cor_veiculo": "AZUL",
+      "id": 3
+    },
+    {
+      "serie": "E1",
+      "numero": "10650710",
+      "placa": "DEV0651",
+      "marca": "HONDA",
+      "tipo_veiculo": "MOTOCICLETA",
+      "cor_veiculo": "BRANCA",
+      "id": 4
+    },
+    {
+      "serie": "A1",
+      "numero": "5601681",
+      "placa": "HBG5105",
+      "marca": "HONDA",
+      "tipo_veiculo": "AUTOMOVEL",
+      "cor_veiculo": "VERDE",
+      "id": 5
+    },
+    {
+      "serie": "AG",
+      "numero": "51098560",
+      "placa": "BVD5011",
+      "marca": "HYUNDAI",
+      "tipo_veiculo": "CAMIONETA",
+      "cor_veiculo": "VERMELHA",
+      "id": 6
+    },
+    {
+      "serie": "E1",
+      "numero": "09885150",
+      "placa": "FSV1808",
+      "marca": "VOLVO",
+      "tipo_veiculo": "AUTOMOVEL",
+      "cor_veiculo": "CINZA",
+      "id": 7
+    }
+  ]
+}
