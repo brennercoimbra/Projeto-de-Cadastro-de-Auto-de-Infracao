@@ -1,15 +1,6 @@
 {
   "aits": [
     {
-      "serie": "AG",
-      "numero": "12345678",
-      "placa": "HFD1234",
-      "marca": "CORSA",
-      "tipo_veiculo": "AUTOMOVEL",
-      "cor_veiculo": "PRETA",
-      "id": 1
-    },
-    {
       "serie": "E1",
       "numero": "10650710",
       "placa": "DEV0651",

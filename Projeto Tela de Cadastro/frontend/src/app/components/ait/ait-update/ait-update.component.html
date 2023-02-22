@@ -6,13 +6,13 @@
             <div class="identait">
                 <mat-form-field>
                     <mat-label>Série</mat-label>
-                    <input matInput maxlength="2"  [(ngModel)]="ait.serie" name="serie">
+                    <input matInput maxlength="2"  [(ngModel)]="ait.serie" (ngModelChange)="ait.serie = $event.toUpperCase()" name="serie">
                 </mat-form-field>
             </div>
             <div class="identait">
                 <mat-form-field>
                     <mat-label>Número</mat-label>
-                    <input matInput maxlength="8" type="number"  [(ngModel)]="ait.numero" name="numero">
+                    <input matInput max="99999999" type="number"  [(ngModel)]="ait.numero" name="numero">
                 </mat-form-field>
             </div>
             <br>
@@ -21,52 +21,52 @@
             <div class="identveic">
                 <mat-form-field>
                     <mat-label>Placa</mat-label>
-                    <input matInput minlength="7" maxlength="7" [(ngModel)]="ait.placa" name="placa">
+                    <input matInput minlength="7" maxlength="7" [(ngModel)]="ait.placa" (ngModelChange)="ait.placa = $event.toUpperCase()" name="placa">
                 </mat-form-field>
             </div>
             <div class="identveic">
                 <mat-form-field>
                     <mat-label>Marca/Modelo</mat-label>
-                    <input matInput [(ngModel)]="ait.marca" name="marca">
+                    <input matInput [(ngModel)]="ait.marca" (ngModelChange)="ait.marca = $event.toUpperCase()" name="marca">
                 </mat-form-field>
             </div>
             <div class="identveic">
                 <mat-form-field>
                     <mat-label>Tipo do Veículo</mat-label>
-                    <input matInput [(ngModel)]="ait.tipo_veiculo" name="tipo_veiculo">
+                    <input matInput [(ngModel)]="ait.tipo_veiculo" (ngModelChange)="ait.tipo_veiculo = $event.toUpperCase()" name="tipo_veiculo">
                 </mat-form-field>
             </div>
             <div class="identveic">
                 <mat-form-field>
                     <mat-label>Cor</mat-label>
-                    <input matInput [(ngModel)]="ait.cor_veiculo" name="cor_veiculo">
+                    <input matInput [(ngModel)]="ait.cor_veiculo" (ngModelChange)="ait.cor_veiculo = $event.toUpperCase()" name="cor_veiculo">
                 </mat-form-field>
             </div>
             <div class="identveic">
                 <mat-form-field>
                     <mat-label>Categoria</mat-label>
-                    <input matInput [(ngModel)]="ait.cat_veiculo" name="cat_veiculo">
+                    <input matInput [(ngModel)]="ait.cat_veiculo" (ngModelChange)="ait.cat_veiculo = $event.toUpperCase()" name="cat_veiculo">
                 </mat-form-field>
             </div>
             <div class="identveic">
                 <mat-form-field>
                     <mat-label>Espécie</mat-label>
-                    <input matInput [(ngModel)]="ait.esp_veiculo" name="esp_veiculo">
+                    <input matInput [(ngModel)]="ait.esp_veiculo" (ngModelChange)="ait.esp_veiculo = $event.toUpperCase()" name="esp_veiculo">
                 </mat-form-field>
             </div>
             <div class="identveic">
                 <mat-form-field>
                     <mat-label>Município</mat-label>
-                    <input matInput [(ngModel)]="ait.munic_veiculo" name="munic_veiculo">
+                    <input matInput [(ngModel)]="ait.munic_veiculo" (ngModelChange)="ait.munic_veiculo = $event.toUpperCase()" name="munic_veiculo">
                 </mat-form-field>
             </div>
             <br>
             <hr>
-            <h3>Data e Hora</h3>
+            <h3>Data e Hora da Infração</h3>
             <div class="data-hora">
                 <mat-form-field>
                     <mat-label>Data</mat-label>
-                    <input matNativeControl type="date" [(ngModel)]="ait.data" name="data">
+                    <input matNativeControl type="date" max="2025-12-31" [(ngModel)]="ait.data" name="data">
                 </mat-form-field>
             </div>
             <div class="data-hora">
@@ -77,11 +77,11 @@
             </div>
             <br>
             <hr>
-            <h3>Identificação do Local</h3>
+            <h3>Identificação do Local da Infração</h3>
             <div class="localidade">
                 <mat-form-field>
                     <mat-label>Logradouro</mat-label>
-                    <input matNativeControl  [(ngModel)]="ait.logra" name="logra">
+                    <input matNativeControl  [(ngModel)]="ait.logra" (ngModelChange)="ait.logra = $event.toUpperCase()" name="logra">
                 </mat-form-field>
             </div>
             <div class="localidade">                    
@@ -93,13 +93,13 @@
             <div class="localidade">                    
                 <mat-form-field>
                     <mat-label>Bairro</mat-label>
-                    <input matInput  [(ngModel)]="ait.bairro" name="bairro">
+                    <input matInput  [(ngModel)]="ait.bairro" (ngModelChange)="ait.bairro = $event.toUpperCase()" name="bairro">
                 </mat-form-field>
             </div>
             <div class="localidade">                    
                 <mat-form-field>
                     <mat-label>Município</mat-label>
-                    <input matInput  [(ngModel)]="ait.munic_local" name="munic_local">
+                    <input matInput  [(ngModel)]="ait.munic_local" (ngModelChange)="ait.munic_local = $event.toUpperCase()" name="munic_local">
                 </mat-form-field>
             </div>
             <br>
