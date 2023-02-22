@@ -1,41 +1,108 @@
-<mat-card>
-    <mat-card-title class="head-form">Exlusão de AIT</mat-card-title>
+<mat-card class="container header mat-elevation-z8">
+    <mat-card-title class="head-form">Exclusão de AIT</mat-card-title>
     <form action="">
         <div>
-            <mat-form-field>
-                <mat-label>Série</mat-label>
-                <input matInput maxlength="2" placeholder="XX" [value]="ait.serie" name="serie" disabled>
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field>
-                <mat-label>Número</mat-label>
-                <input matInput maxlength="8" placeholder="########" [value]="ait.numero" name="numero" disabled>
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field>
-                <mat-label>Placa</mat-label>
-                <input matInput minlength="7" maxlength="7" [value]="ait.placa" name="placa" disabled>
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field>
-                <mat-label>Marca</mat-label>
-                <input matInput [value]="ait.marca" name="marca" disabled>
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field>
-                <mat-label>Tipo do Veículo</mat-label>
-                <input matInput [value]="ait.tipo_veiculo" name="tipo_veiculo" disabled>
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field>
-                <mat-label>Cor</mat-label>
-                <input matInput [value]="ait.cor_veiculo" name="cor_veiculo" disabled>
-            </mat-form-field>
+            <h3>Identificação da Infração</h3>
+            <div class="identait">
+                <mat-form-field>
+                    <mat-label>Série</mat-label>
+                    <input matInput maxlength="2" disabled [(ngModel)]="ait.serie" name="serie">
+                </mat-form-field>
+            </div>
+            <div class="identait">
+                <mat-form-field>
+                    <mat-label>Número</mat-label>
+                    <input matInput maxlength="8" type="number" disabled [(ngModel)]="ait.numero" name="numero">
+                </mat-form-field>
+            </div>
+            <br>
+            <hr>
+            <h3>Identificação do Veículo</h3>
+            <div class="identveic">
+                <mat-form-field>
+                    <mat-label>Placa</mat-label>
+                    <input matInput minlength="7" maxlength="7" disabled [(ngModel)]="ait.placa" name="placa">
+                </mat-form-field>
+            </div>
+            <div class="identveic">
+                <mat-form-field>
+                    <mat-label>Marca/Modelo</mat-label>
+                    <input matInput disabled [(ngModel)]="ait.marca" name="marca">
+                </mat-form-field>
+            </div>
+            <div class="identveic">
+                <mat-form-field>
+                    <mat-label>Tipo do Veículo</mat-label>
+                    <input matInput disabled [(ngModel)]="ait.tipo_veiculo" name="tipo_veiculo">
+                </mat-form-field>
+            </div>
+            <div class="identveic">
+                <mat-form-field>
+                    <mat-label>Cor</mat-label>
+                    <input matInput disabled [(ngModel)]="ait.cor_veiculo" name="cor_veiculo">
+                </mat-form-field>
+            </div>
+            <div class="identveic">
+                <mat-form-field>
+                    <mat-label>Categoria</mat-label>
+                    <input matInput disabled [(ngModel)]="ait.cat_veiculo" name="cat_veiculo">
+                </mat-form-field>
+            </div>
+            <div class="identveic">
+                <mat-form-field>
+                    <mat-label>Espécie</mat-label>
+                    <input matInput disabled [(ngModel)]="ait.esp_veiculo" name="esp_veiculo">
+                </mat-form-field>
+            </div>
+            <div class="identveic">
+                <mat-form-field>
+                    <mat-label>Município</mat-label>
+                    <input matInput disabled [(ngModel)]="ait.munic_veiculo" name="munic_veiculo">
+                </mat-form-field>
+            </div>
+            <br>
+            <hr>
+            <h3>Data e Hora</h3>
+            <div class="data-hora">
+                <mat-form-field>
+                    <mat-label>Data</mat-label>
+                    <input matNativeControl disabled type="date" max="2025-12-31" [(ngModel)]="ait.data" name="data">
+                </mat-form-field>
+            </div>
+            <div class="data-hora">
+                <mat-form-field>
+                    <mat-label>Hora</mat-label>
+                    <input matInput disabled type="time" [(ngModel)]="ait.hora" name="hora">
+                </mat-form-field>
+            </div>
+            <br>
+            <hr>
+            <h3>Identificação do Local</h3>
+            <div class="localidade">
+                <mat-form-field>
+                    <mat-label>Logradouro</mat-label>
+                    <input matNativeControl disabled  [(ngModel)]="ait.logra" name="logra">
+                </mat-form-field>
+            </div>
+            <div class="localidade">                    
+                <mat-form-field>
+                    <mat-label>Número</mat-label>
+                    <input matInput disabled  [(ngModel)]="ait.numero_local" name="numero_local">
+                </mat-form-field>
+            </div>
+            <div class="localidade">                    
+                <mat-form-field>
+                    <mat-label>Bairro</mat-label>
+                    <input matInput disabled  [(ngModel)]="ait.bairro" name="bairro">
+                </mat-form-field>
+            </div>
+            <div class="localidade">                    
+                <mat-form-field>
+                    <mat-label>Município</mat-label>
+                    <input matInput disabled [(ngModel)]="ait.munic_local" name="munic_local">
+                </mat-form-field>
+            </div>
+            <br>
         </div>
     </form>
 

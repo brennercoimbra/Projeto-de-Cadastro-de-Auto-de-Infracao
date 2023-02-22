@@ -17,7 +17,16 @@ export class AitDeleteComponent implements OnInit {
     placa: '',
     marca: '',
     tipo_veiculo: '',
-    cor_veiculo: ''
+    cor_veiculo: '',
+    cat_veiculo: '',
+    esp_veiculo: '',
+    munic_veiculo: '',
+    data: null,
+    hora: null,
+    logra: '',
+    numero_local: null,
+    bairro: '',
+    munic_local: ''
   }
 
   constructor(private aitService: AitService, private router: Router, private route: ActivatedRoute) {

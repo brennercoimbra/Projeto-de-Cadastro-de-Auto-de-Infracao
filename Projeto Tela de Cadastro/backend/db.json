@@ -10,15 +10,6 @@
       "id": 1
     },
     {
-      "serie": "E3",
-      "numero": "32145646",
-      "placa": "GVC2016",
-      "marca": "FIAT",
-      "tipo_veiculo": "AUTOMOVEL",
-      "cor_veiculo": "AZUL",
-      "id": 3
-    },
-    {
       "serie": "E1",
       "numero": "10650710",
       "placa": "DEV0651",
@@ -39,7 +30,7 @@
     {
       "serie": "AG",
       "numero": "51098560",
-      "placa": "BVD5011",
+      "placa": "BVO5011",
       "marca": "HYUNDAI",
       "tipo_veiculo": "CAMIONETA",
       "cor_veiculo": "VERMELHA",
@@ -53,6 +44,42 @@
       "tipo_veiculo": "AUTOMOVEL",
       "cor_veiculo": "CINZA",
       "id": 7
+    },
+    {
+      "serie": "E1",
+      "numero": 12031506,
+      "placa": "FVS0265",
+      "marca": "PORSCHE TAYCAN",
+      "tipo_veiculo": "UTILITARIO",
+      "cor_veiculo": "AMARELO",
+      "cat_veiculo": "PARTICULAR",
+      "esp_veiculo": "PASSAGEIRO",
+      "munic_veiculo": "NOVA LIMA",
+      "data": "2023-02-20",
+      "hora": "12:35",
+      "logra": "AV BRASIL",
+      "numero_local": "255",
+      "bairro": "SANTA EFIGENIA",
+      "munic_local": "BELO HORIZONTE",
+      "id": 8
+    },
+    {
+      "serie": "AG",
+      "numero": 12065051,
+      "placa": "ASD5106",
+      "marca": "FORD FIESTA",
+      "tipo_veiculo": "AUTOMOVEL",
+      "cor_veiculo": "PRATA",
+      "cat_veiculo": "PARTICULAR",
+      "esp_veiculo": "PASSAGEIRO",
+      "munic_veiculo": "BELO HORIZONTE",
+      "data": "2022-02-13",
+      "hora": "10:35",
+      "logra": "AV CONTORNO",
+      "numero_local": "5469",
+      "bairro": "SANTA EFIGENIA",
+      "munic_local": "BELO HORIZONTE",
+      "id": 9
     }
   ]
 }

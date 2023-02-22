@@ -12,7 +12,7 @@ export class AitReadComponent implements OnInit {
 
   aits!: Ait[]
 
-  displayedColumns = ['id', 'serie', 'numero', 'placa', 'marca', 'tipo_veiculo', 'cor_veiculo', 'action']
+  displayedColumns = ['id', 'serie', 'numero', 'placa', 'data', 'action']
 
 
 

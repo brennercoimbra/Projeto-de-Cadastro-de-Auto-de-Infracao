@@ -1,15 +1,45 @@
-form{
-    display: flex;
-    flex-direction: column;
+.container{
+    max-width: 80%;
+}
+
+div.identait{
+    display: inline-block;
     
-    width: 40%;
-    margin: 15px;
+    margin-left: 20px;
+    
+}
+div.identveic{
+    display: inline-block;
+    
+    margin-left: 20px;
+    
+}
+div.data-hora{
+    display: inline-block;
+    
+    margin-left: 20px;
+    
+}
+div.localidade{
+    display: inline-block;
+    
+    margin-left: 20px;
+    
 }
 
 .head-form{
-    margin: 10px;
+    margin: 15px 30px;
 }
 
 button{
-    margin: 10px
+    margin: 10px;
+}
+
+h3{
+    margin-left: 30px;
+    font-weight: 900;
+}
+
+hr{
+    width: 96%;
 }

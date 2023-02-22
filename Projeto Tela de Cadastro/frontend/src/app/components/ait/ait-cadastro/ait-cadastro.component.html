@@ -1,41 +1,108 @@
-<mat-card>
+<mat-card class="container header mat-elevation-z8">
     <mat-card-title class="head-form">Cadastro AIT</mat-card-title>
     <form action="">
         <div>
-            <mat-form-field>
-                <mat-label>Série</mat-label>
-                <input matInput maxlength="2" placeholder="XX" [(ngModel)]="ait.serie" name="serie">
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field>
-                <mat-label>Número</mat-label>
-                <input matInput maxlength="8" placeholder="########" [(ngModel)]="ait.numero" name="numero">
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field>
-                <mat-label>Placa</mat-label>
-                <input matInput minlength="7" maxlength="7" [(ngModel)]="ait.placa" name="placa">
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field>
-                <mat-label>Marca</mat-label>
-                <input matInput [(ngModel)]="ait.marca" name="marca">
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field>
-                <mat-label>Tipo do Veículo</mat-label>
-                <input matInput [(ngModel)]="ait.tipo_veiculo" name="tipo_veiculo">
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field>
-                <mat-label>Cor</mat-label>
-                <input matInput [(ngModel)]="ait.cor_veiculo" name="cor_veiculo">
-            </mat-form-field>
+            <h3>Identificação da Infração</h3>
+            <div class="identait">
+                <mat-form-field>
+                    <mat-label>Série</mat-label>
+                    <input matInput maxlength="2"  [(ngModel)]="ait.serie" name="serie">
+                </mat-form-field>
+            </div>
+            <div class="identait">
+                <mat-form-field>
+                    <mat-label>Número</mat-label>
+                    <input matInput max="99999999" type="number"  [(ngModel)]="ait.numero" name="numero">
+                </mat-form-field>
+            </div>
+            <br>
+            <hr>
+            <h3>Identificação do Veículo</h3>
+            <div class="identveic">
+                <mat-form-field>
+                    <mat-label>Placa</mat-label>
+                    <input matInput minlength="7" maxlength="7" [(ngModel)]="ait.placa" name="placa">
+                </mat-form-field>
+            </div>
+            <div class="identveic">
+                <mat-form-field>
+                    <mat-label>Marca/Modelo</mat-label>
+                    <input matInput [(ngModel)]="ait.marca" name="marca">
+                </mat-form-field>
+            </div>
+            <div class="identveic">
+                <mat-form-field>
+                    <mat-label>Tipo do Veículo</mat-label>
+                    <input matInput [(ngModel)]="ait.tipo_veiculo" name="tipo_veiculo">
+                </mat-form-field>
+            </div>
+            <div class="identveic">
+                <mat-form-field>
+                    <mat-label>Cor</mat-label>
+                    <input matInput [(ngModel)]="ait.cor_veiculo" name="cor_veiculo">
+                </mat-form-field>
+            </div>
+            <div class="identveic">
+                <mat-form-field>
+                    <mat-label>Categoria</mat-label>
+                    <input matInput [(ngModel)]="ait.cat_veiculo" name="cat_veiculo">
+                </mat-form-field>
+            </div>
+            <div class="identveic">
+                <mat-form-field>
+                    <mat-label>Espécie</mat-label>
+                    <input matInput [(ngModel)]="ait.esp_veiculo" name="esp_veiculo">
+                </mat-form-field>
+            </div>
+            <div class="identveic">
+                <mat-form-field>
+                    <mat-label>Município</mat-label>
+                    <input matInput [(ngModel)]="ait.munic_veiculo" name="munic_veiculo">
+                </mat-form-field>
+            </div>
+            <br>
+            <hr>
+            <h3>Data e Hora da Infração</h3>
+            <div class="data-hora">
+                <mat-form-field>
+                    <mat-label>Data</mat-label>
+                    <input matNativeControl type="date" max="2025-12-31" [(ngModel)]="ait.data" name="data">
+                </mat-form-field>
+            </div>
+            <div class="data-hora">
+                <mat-form-field>
+                    <mat-label>Hora</mat-label>
+                    <input matInput type="time" [(ngModel)]="ait.hora" name="hora">
+                </mat-form-field>
+            </div>
+            <br>
+            <hr>
+            <h3>Identificação do Local da Infração</h3>
+            <div class="localidade">
+                <mat-form-field>
+                    <mat-label>Logradouro</mat-label>
+                    <input matNativeControl  [(ngModel)]="ait.logra" name="logra">
+                </mat-form-field>
+            </div>
+            <div class="localidade">                    
+                <mat-form-field>
+                    <mat-label>Número</mat-label>
+                    <input matInput  [(ngModel)]="ait.numero_local" name="numero_local">
+                </mat-form-field>
+            </div>
+            <div class="localidade">                    
+                <mat-form-field>
+                    <mat-label>Bairro</mat-label>
+                    <input matInput  [(ngModel)]="ait.bairro" name="bairro">
+                </mat-form-field>
+            </div>
+            <div class="localidade">                    
+                <mat-form-field>
+                    <mat-label>Município</mat-label>
+                    <input matInput  [(ngModel)]="ait.munic_local" name="munic_local">
+                </mat-form-field>
+            </div>
+            <br>
         </div>
     </form>
 
