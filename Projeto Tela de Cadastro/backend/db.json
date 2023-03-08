@@ -13,10 +13,19 @@
       "serie": "A1",
       "numero": "5601681",
       "placa": "HBG5105",
-      "marca": "HONDA",
+      "marca": "HONDA CITY",
       "tipo_veiculo": "AUTOMOVEL",
       "cor_veiculo": "VERDE",
-      "id": 5
+      "id": 5,
+      "cat_veiculo": "PARTICULAR",
+      "esp_veiculo": "PASSAGEIRO",
+      "munic_veiculo": "CONTAGEM",
+      "data": "2023-01-01",
+      "hora": "18:56",
+      "logra": "AV CONTORNO",
+      "numero_local": "4125",
+      "bairro": "SAVASSI",
+      "munic_local": "BELO HORIZONTE"
     },
     {
       "serie": "AG",
@@ -56,21 +65,21 @@
     },
     {
       "serie": "AG",
-      "numero": 12065051,
-      "placa": "ASD5106",
-      "marca": "FORD FIESTA",
-      "tipo_veiculo": "AUTOMOVEL",
-      "cor_veiculo": "PRATA",
+      "numero": 56402602,
+      "placa": "AGB5231",
+      "marca": "VW TAOS",
+      "tipo_veiculo": "UTILITARIO",
+      "cor_veiculo": "BRANCA",
       "cat_veiculo": "PARTICULAR",
-      "esp_veiculo": "PASSAGEIRO",
+      "esp_veiculo": "CARGA",
       "munic_veiculo": "BELO HORIZONTE",
-      "data": "2022-02-13",
-      "hora": "10:35",
-      "logra": "AV CONTORNO",
-      "numero_local": "5469",
-      "bairro": "SANTA EFIGENIA",
-      "munic_local": "BELO HORIZONTE",
-      "id": 9
+      "data": "2023-02-03",
+      "hora": "14:52",
+      "logra": "AV JOAO CESAR DE OLIVEIRA",
+      "numero_local": "5409",
+      "bairro": "ELDORADO",
+      "munic_local": "CONTAGEM",
+      "id": 10
     }
   ]
 }
